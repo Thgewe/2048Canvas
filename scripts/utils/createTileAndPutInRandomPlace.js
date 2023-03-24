@@ -13,8 +13,8 @@ export function createTileAndPutInRandomPlace(getPositionByRowAndCol, ctx, isVal
     }
 
     function put() {
-        let row = Math.floor(Math.random() * 4)
-        let col = Math.floor(Math.random() * 4)
+        let row = Math.floor(Math.random() * gameParams.rows)
+        let col = Math.floor(Math.random() * gameParams.cols)
 
         if (gameState.getTileMap()[row][col] === null) {
             gameState.incTilesCount();
